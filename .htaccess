@@ -6,12 +6,12 @@
     
 
     RewriteEngine On
-    
-    # Avoiding loop
+       # Avoiding loop
 <IfModule mod_rewrite.c>
  RewriteEngine On
  RewriteRule ^([^/]+) index.php?id=$1 [L]
 </IfModule>
+ 
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
