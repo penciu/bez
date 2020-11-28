@@ -7,7 +7,7 @@
     
     # Avoiding loop
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^/]*)$ /curation.php?id=$1 [L]
+RewriteRule ^([^/]*)$ /index.php?id=$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
